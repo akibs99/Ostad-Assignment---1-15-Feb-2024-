@@ -1,0 +1,265 @@
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  /* height: 100vh; */
+  
+}
+
+.font {
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color:#2C5364 ;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #2C5364 !important;
+  }
+  
+  .navbar-brand {
+    color: #2C5364 !important;
+    font-family: "Fjalla One", sans-serif;
+  }
+  
+  .navbar-toggler {
+    border-color: white !important;
+  }
+  
+  
+  
+  .btn1{
+    background-color: rgb(236, 20, 20);
+    border-radius: 10%;
+    color: white;
+  
+  }
+
+/* Nav End */
+
+
+
+
+/* Button Start */
+  /* Add the custom button styles here */
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-up-btn {
+    position: relative;
+    transition: top 0.3s ease-in-out;
+    top: 0;
+}
+.slide-up-btn:hover {
+    top: -5px;
+}
+
+.rotate-btn {
+    transition: transform 0.4s ease;
+}
+.rotate-btn:hover {
+    transform: rotate(360deg);
+}
+
+.text-slide-btn {
+    overflow: hidden;
+    position: relative;
+    transition: color 0.3s;
+    background-color: rgb(203, 0, 221);
+    color: white;
+}
+.text-slide-btn:before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s;
+}
+.text-slide-btn:hover:before {
+    left: 0;
+}
+.text-slide-btn:hover {
+    color: #fff;
+}
+
+.shrink-btn {
+    transition: transform 0.3s ease-in-out;
+}
+.shrink-btn:hover {
+    transform: scale(0.9);
+}
+
+.bounce-btn {
+    animation: bounce 0.6s infinite alternate;
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+.pulse-btn {
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.shadow-btn {
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #4bff14;
+}
+.shadow-btn:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.shine-btn {
+    position: relative;
+    overflow: hidden;
+}
+.shine-btn:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(141, 10, 10, 0.2);
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+.shine-btn:hover:after {
+    top: -50%;
+    left: 150%;
+}
+
+.three-d-btn {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.three-d-btn:hover {
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+    top: 3px;
+}
+
+.flip-btn {
+    transition: transform 0.6s;
+    background-color: #6600eb;
+    color: white;
+}
+.flip-btn:hover {
+    transform: rotateY(180deg);
+}
+
+/* Button End */
+
+
+
+/* Card Start */
+
+
+.card-cont {
+  display: flex;
+  justify-content: center;
+
+}
+.card {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.card img {
+  object-fit: cover;
+}
+
+
+/* Card End */
+
+
+/* Progress bar Start */
+
+.progress {
+  height: 30px;
+  background-color: #f3f3f3;
+}
+
+
+
+.progress-bar {
+  background-color: #4caf50;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Progress bar End */
+
+
+
+/* Table Sart */
+
+
+.table-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.table-header {
+  background-color: #f8f9fa;
+}
+.table-row:hover {
+  background-color: #e9ecef;
+}
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+
+/* Table End */
+
+
+/* Form Start */
+
+
+  .form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .btn-primary {
+    margin-left: 25%;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+
+  /* Form End */
+
+
